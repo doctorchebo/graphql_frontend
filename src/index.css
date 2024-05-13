@@ -1,13 +1,86 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #eeeeee;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#main {
+  width: 60%;
+  height: 100%;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#book-list {
+  padding: 0;
+}
+
+#book-list h1 {
+  text-align: center;
+}
+
+#book-list li {
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #d82e81;
+  box-shadow: 1px, 2px, 3px, rgba(0, 0, 0, 0.3);
+  padding: 6px;
+  margin: 5px;
+  color: black;
+  cursor: pointer;
+  color: #d82e81;
+}
+
+#book-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #d82e81;
+  box-shadow: 20px, 30px, 10px, rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  color: white;
+  overflow: auto;
+}
+
+#book-details li {
+  display: block;
+  color: white;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 10px;
+}
+
+form select,
+form input {
+  margin: 5px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+form label {
+  text-align: right;
+  padding: 6px;
+}
+
+form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+form button {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  cursor: pointer;
+  background: #d82e81;
+  color: white;
+  font-size: 15px;
+  border: 0;
 }
